@@ -1,0 +1,126 @@
+/*.Appbar{*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  width: 100%;*/
+/*  height: 48px;*/
+/*  border-bottom: 1px solid #f0f0f0;*/
+/*  background-color: white;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-center: space-between;*/
+/*  z-index: 1201;*/
+/*}*/
+
+.Appbar{
+  position: sticky;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 5px;
+  display: flex;
+  justify-center: space-between;
+  align-items: center;
+  z-index: 1201;
+}
+
+.Appbar-Right{
+  margin-left: auto;
+}
+
+.Appbar-Right-Block{
+  display: flex;
+}
+
+.Appbar-Right-Block > div{
+  padding: 0 5px;
+}
+
+.Appbar .AppbarMenuLogo{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-flow: nowrap;
+  position: relative;
+  !border: 1px solid red;
+}
+
+.Appbar .AppbarMenu{
+  z-index: 1;
+}
+
+.Appbar .AppbarLogo{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  !border: 1px solid green;
+}
+
+.Appbar .AppbarLogin{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  !border: 1px solid green;
+}
+
+@media (min-width: 768px) {
+  .Appbar .AppbarLogo{
+    position: absolute;
+    width: 250px;
+  }
+}
+
+.Appbar .AppbarLogo > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  width: 100%;
+  !border: 1px solid blue;
+}
+.AppbarLogo .LogoImg{
+  height: 42px;
+}
+
+.Appbar > div.AppbarTitle{
+  flex: 8;
+  display: flex;
+  align-items: center;
+}
+
+.Appbar > div.AppbarOption{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+}
+
+.Appbar > .AppbarLeft{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Appbar > .AppbarTop{
+  flex: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Appbar > .AppbarRight{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 48px;
+}
+
+.Appbar > .AppbarLeft,
+.Appbar > .AppbarTop,
+.Appbar > .AppbarRight{
+  !border: 1px solid black;
+}

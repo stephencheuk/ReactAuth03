@@ -1,0 +1,35 @@
+.jss6024 {
+  height: 126px;
+  align-items: flex-end;
+  display: flex;
+  padding: 10px;
+  flex-grow: 1;
+  margin-bottom: 6px;
+  justify-content: space-between;
+}
+
+.jss6026 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.jss6027 {
+    text-align: right;
+}
+
+.jss6024 > * {
+    padding: 0 5px;
+}
+
+.jss6025 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.jss5976 {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 84px;
+}

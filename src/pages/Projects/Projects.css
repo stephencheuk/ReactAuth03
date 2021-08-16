@@ -1,0 +1,115 @@
+.ProjRoot{
+  flex: 1;
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+}
+
+.ProjRoot .ProjList {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.ProjRoot .ProjList > div {
+  height: 34px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+/*  justify-content: center;*/
+}
+
+.ProjRoot .ProjList > div:hover {
+  background-color: #e6e9ef;
+  cursor: pointer;
+}
+
+.ProjRoot .ProjList .ProdList__Divider:hover {
+  background-color: initial;
+  cursor: auto;
+}
+
+.ProjRoot .ProjList .ProdList__Divider hr {
+  flex: 1;
+}
+
+.ProjRoot .ProjList__Title {
+  height: 48px;
+  padding: 10px 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+/*  justify-content: center;*/
+}
+
+.ProjRoot .ProjList__Action{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ProjRoot .ProjList__Search{
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.ProjList > div > .ProjList__Icon__Text{
+  flex: 1;  
+}
+
+.ProjRoot .ProjList__Icon{
+  display: flex;
+  align-items: center;
+  width: 35px;
+  justify-content: center;
+  !border: 1px solid black;
+}
+
+.ProjRoot .ProjList__Search.Searching{
+  border: 1px solid #0085ff;
+}
+
+.ProjRoot .ProjList__Search .ProjList__Search__Input{
+}
+
+.ProjRoot .ProjList__Search .ProjList__Search__Input input,
+.ProjRoot .ProjList__Search .ProjList__Search__Input input:focus {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+
+.ProjRoot .ProjList__Search .MuiInput-underline:before{
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  height: 31px;
+  border-radius: 4px;
+}
+
+.ProjRoot .ProjList__Search .MuiInput-underline:after{
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  height: 31px;
+  border-radius: 4px;
+}
+
+/*.ProjRoot .ProjList__Search input{*/
+/*  border: 1px solid rgba(0, 0, 0, 0.12);*/
+/*  width: 100%;*/
+/*  height: 35px;*/
+/*  margin: 5px 0;*/
+/*}*/
+
+.ProjRoot .ProjList {
+  padding: 10px;
+  width: 250px;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.ProjRoot .ProjContent {
+  padding: 10px;
+  flex: 1;
+  overflow: auto;
+}

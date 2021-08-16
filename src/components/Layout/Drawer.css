@@ -1,0 +1,124 @@
+.ResponseDrawer.Closed .Drawer{
+  min-width: 54px !important;
+  overflow: hidden;
+  width: 54px;
+}
+
+.ResponseDrawer.Closed .Drawer .Avatar {
+  width: 34px;
+  height: 34px;
+}
+
+.ResponseDrawer {
+  min-width: 250px;
+  width: 250px;
+}
+
+.Drawer{
+  background-color: white;
+  min-width: 250px;
+  width: 250px;
+  transition: all 0.2s;
+}
+
+.ResponseDrawer > div{
+  margin-top: 48px;
+}
+
+.ResponseDrawer.Closed{
+  min-width: 54px;
+  width: 54px;
+}
+
+.ResponseDrawer.Closed .Drawer .DrawerAvatar{
+  width: 54px;
+  height: 54px;
+}
+
+.ResponseDrawer.Closed .Drawer .DrawerUser{
+  height: 0;
+  overflow: hidden;
+}
+
+.ResponseDrawer.Closed .Drawer .DrawerTop{
+  padding-bottom: 0;
+}
+
+.ResponseDrawer .Drawer .DrawerAvatar{
+  padding: 10px;
+  width: 250px;
+  height: 120px;
+  transition: all 0.2s;
+}
+
+.ResponseDrawer .Drawer .Avatar{
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: all 0.2s;
+}
+
+.ResponseDrawer .Drawer .Avatar img{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.ResponseDrawer .Drawer .DrawerTop{
+  padding-bottom: 10px;
+}
+.ResponseDrawer .Drawer .DrawerUser{
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.ResponseDrawer .Drawer .DrawerItems{
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.ResponseDrawer .Drawer .DrawerItems > li{
+  border-bottom: 1px solid #f0f0f0;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.ResponseDrawer .ListItem{
+  overflow: hidden;
+  height: 38px;
+  max-height: 38px;
+  overflow: hidden;
+}
+.ResponseDrawer .ListItem .ListItemText{
+  transition: all 0.2s;
+  white-space: wrap;
+  !border: 1px solid black;
+}
+
+@media (min-width: 576px) {
+  .ResponseDrawer.Closed .ListItem .ListItemText{
+    white-space: nowrap;
+    flex: 0;
+    padding-left: 200px;
+  }
+}
+
+/*
+
+// xs --- Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// sm --- Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// md --- Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// lg --- Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// xl --- Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/

@@ -1,0 +1,83 @@
+.BookRoot {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.BookRoot .BookSearch {
+  height: 48px;
+/*  border: 1px solid black;*/
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.BookRoot .BookSearch .BookList__Title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.BookRoot .BookSearch .BookList__Title .BookList__Title__Icon {
+  width: 24px;
+}
+
+.BookRoot .BookSearch .BookList__Title .BookList__Title__Text {
+  flex: 1;
+}
+
+.BookRoot .BookSearch .BookList__Search {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.BookRoot .BookSearch .BookList__Search .BookList__Search__Input {
+  flex: 1;
+}
+
+.BookRoot .BookSearch .BookList__Search .BookList__Search__Input input {
+  width: 100%;
+}
+
+.BookRoot .BookSearch .BookList__Search .BookList__Search__Icon {
+  width: 24px;
+}
+
+.BookRoot .BookSpace {
+  flex: 1;
+  overflow: auto;
+/*  border: 1px solid black;*/
+}
+
+.BookRoot .BookSpace .BookList{
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.BookRoot .BookSpace .BookList .BookList__Operation {
+  display: none;
+}
+
+.BookRoot .BookSpace .BookList .Book{
+  flex: 1 0 23%;
+  height: 240px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BookRoot .BookSpace .BookList .Book .Book__Img{
+  flex: 1;
+  border: 1px solid black;
+}
+
+.BookRoot .BookSpace .BookList .Book .Book__Title{
+  height: 40px;
+  border: 1px solid black;
+}
