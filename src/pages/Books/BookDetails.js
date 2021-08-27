@@ -1,11 +1,13 @@
 import { useHistory, useParams, withRouter } from 'react-router';
 
-const ProjDetails = ({ ...props }) => {
+const BookDetails = ({ ...props }) => {
 
 //  const AppState = useSelector((state) => state.App);
 
   const history = useHistory();
   const params = useParams();
+
+  console.log('BookDetails', props)
 
   return (
     <>
@@ -22,4 +24,4 @@ const ProjDetails = ({ ...props }) => {
   );
 }
 
-export default withRouter(ProjDetails);
+export default withRouter(BookDetails);

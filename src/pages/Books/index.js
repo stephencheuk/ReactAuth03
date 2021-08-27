@@ -1,5 +1,7 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { Route, Redirect } from 'react-router-dom';
+
 import clsx from 'clsx';
 import {
   Home as HomeIcon,
@@ -18,14 +20,14 @@ import {
 //  TextField,
 } from '@material-ui/core';
 
-import { useHistory } from "react-router-dom"; 
+import { useHistory, useParams } from "react-router-dom"; 
 
 import './Books.css';
 import BookDetails from './BookDetails';
 import demo_data from './demo_data';
 
 
-const Books = () => {
+const Books = (props) => {
 
   const [books, setBooks] = useState([]);
   const [search, setSearch] = useState('');
@@ -39,6 +41,11 @@ const Books = () => {
 //  const handleChange = () => {};
 
   const history = useHistory();
+  const { ...params } = useParams();
+
+  console.log('Books history', history);
+  console.log('Books params', params);
+  console.log('Books props', props);
 
   useEffect(()=>{
     //[
@@ -63,8 +70,11 @@ const Books = () => {
     //  { id:19, name: 'My 19th Project' },
     //  { id:20, name: 'My 20th Project' }
     //]
+     console.log('useEffect');
      setBooks(demo_data.items);
   }, []);
+
+  //props.match.isExact
 
   return (
     <div className="BookRoot">
@@ -97,8 +107,8 @@ const Books = () => {
           {
             books
               .filter((obj)=>obj.volumeInfo.title.toLowerCase().indexOf(search.toLowerCase()) >= 0)
-              .map((p) => (
-                <div className="Book" onClick={ e => history.push(`/Books/${p.id}`) }>
+              .map((p, i) => (
+                <div key={i} className="Book" onClick={ e => history.push(`/Books/${p.id}`) }>
                   <div className="Book__Img"><img src={p.volumeInfo?.imageLinks?.smallThumbnail} alt={p.volumeInfo?.title} /></div>
                   <div className="Book__Title">{p.volumeInfo?.title}</div>
                 </div>
@@ -106,7 +116,9 @@ const Books = () => {
           }
         </div>
         <div className="BookContent">
-          <BookDetails />
+          <Suspense fallback=" ">
+              <Route exact path="/Books/:id" component={ BookDetails } />
+          </Suspense>
         </div>
       </div>
     </div>
@@ -114,3 +126,10 @@ const Books = () => {
 }
 
 export default Books;
+
+//<Router>
+//      <Route exact path="/" component={Dashboard} />
+//      <Route exact path="/login" component={Login} />
+//      <Route path="/home" component={Home} />
+//      <Route path="/members" component={Members} />
+//</Router>
