@@ -11,7 +11,7 @@ import StoreProvider from './store';
 ReactDOM.render(
   <React.StrictMode>
     <StoreProvider>
-      <Router basename={'/mui02'}>
+      <Router basename={'/ReactAuth03'}>
         <App />
       </Router>
     </StoreProvider>
