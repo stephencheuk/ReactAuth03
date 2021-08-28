@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReactAuth03/static/css/main.70ce339a.chunk.css",
+    "main.js": "/ReactAuth03/static/js/main.a11f2e14.chunk.js",
+    "main.js.map": "/ReactAuth03/static/js/main.a11f2e14.chunk.js.map",
+    "runtime-main.js": "/ReactAuth03/static/js/runtime-main.fc4c6f77.js",
+    "runtime-main.js.map": "/ReactAuth03/static/js/runtime-main.fc4c6f77.js.map",
+    "static/js/2.f84e4a08.chunk.js": "/ReactAuth03/static/js/2.f84e4a08.chunk.js",
+    "static/js/2.f84e4a08.chunk.js.map": "/ReactAuth03/static/js/2.f84e4a08.chunk.js.map",
+    "static/js/3.da21b4a8.chunk.js": "/ReactAuth03/static/js/3.da21b4a8.chunk.js",
+    "static/js/3.da21b4a8.chunk.js.map": "/ReactAuth03/static/js/3.da21b4a8.chunk.js.map",
+    "index.html": "/ReactAuth03/index.html",
+    "static/css/main.70ce339a.chunk.css.map": "/ReactAuth03/static/css/main.70ce339a.chunk.css.map",
+    "static/js/2.f84e4a08.chunk.js.LICENSE.txt": "/ReactAuth03/static/js/2.f84e4a08.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc4c6f77.js",
+    "static/js/2.f84e4a08.chunk.js",
+    "static/css/main.70ce339a.chunk.css",
+    "static/js/main.a11f2e14.chunk.js"
+  ]
+}
