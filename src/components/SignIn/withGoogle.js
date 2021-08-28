@@ -11,6 +11,7 @@ const SignIn = ({classes, onLoginSuccess}) => {
 
   const signInClick = async (e) => {
       let SignedUser = await signInWithGoogle();
+      console.log(SignedUser);
       if(SignedUser) setUser(SignedUser);
       onLoginSuccess({Token: SignedUser.refreshToken, Name: SignedUser.displayName, Email: SignedUser.email, ProfileImg: SignedUser.photoURL});
       e.preventDefault();
